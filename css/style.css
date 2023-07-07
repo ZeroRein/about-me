@@ -66,6 +66,7 @@ ul {
     padding-bottom: 10px;
 }
 .nav-list li {
+    display: inline;
     margin: 0;
     padding: 10px;
 }
@@ -75,6 +76,7 @@ ul {
 }
 
 .nav-toggle:checked ~ .nav .nav-list {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
