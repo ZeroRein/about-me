@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em 0;
+}
+
+ul {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    position: relative;
+    padding: 15px 0 0;
+    background-color:  rgb(67, 14, 116);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0;
+    }
+}
+.header-h1 {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.nav-a {
+    display: none;
+}
+
+.btn-1 {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url("../img/humberger01.webp") center center / 35px 20px no-repeat;
+    cursor: pointer;
+}
+
+.nav-a:checked ~ .btn-1 {
+    background : url("../img/R.png") center center / 26px 26px no-repeat;
+}
+
+.nav {
+    padding-top: 0px;
+    background: url("../img/black_00049.jpg") center center / cover no-repeat;
+}
+
+.nav-list {
+    display: none;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.nav-list li {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+}
+.nav-list a {
+    display: block;
+    color: #fff;
+}
+
+.nav-t:checked ~ .nav .nav-list {
+    display: flex;
+    justify-content: center;
+}
+
