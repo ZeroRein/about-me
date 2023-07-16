@@ -5,7 +5,10 @@ h1, h2 {
     margin-bottom: 40px;
     line-height: 1.5;
 }
-
+main {
+    position: relative;
+    left: 100px;
+}
 p {
     margin-top: 0;
     margin-bottom: 1em 0;
@@ -31,16 +34,29 @@ p {
 }
 aside {
     position: fixed;
+    right: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(91, 88, 88, 0.696);
+    transition: all 2s ease;
 }
-.tran {
-    
+aside:hover {
+    position: fixed;
+    right: 50px;
+    left: 0px;
+    width: 150px;
+    height: 100%;
 }
-
 ul {
+    position: relative;
     margin: 1em 0;
     padding: 0;
     list-style: none;
 }
+
+
+
 a{
     margin: 0;
     padding: 0;
