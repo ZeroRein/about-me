@@ -32,62 +32,59 @@ p {
     text-align: center;
     padding-bottom: 5px;
 }
-aside {
-    position: fixed;
-    right: 0px;
+.side {
+    position: absolute;
+    right: 10px;
     left: 0px;
-    width: 100px;
+    width: 350px;
     height: 100%;
+    margin:10px;
     background-color: rgba(91, 88, 88, 0.696);
-    transition: all 2s ease;
+    animation: close-menu 2s forwards;
 }
-aside:hover {
-    position: fixed;
-    right: 50px;
-    left: 0px;
-    width: 150px;
-    height: 100%;
+.side:hover{
+    animation: open-menu 2s forwards;
 }
-ul {
-    position: relative;
-    margin: 1em 0;
+@keyframes open-menu {
+    0% {
+    transform: translateX(-315px);
+    }
+    100% {
+    transform: translateX(-20px);
+    }
+}
+
+@keyframes close-menu {
+    0% {
+    transform: translateX(-20px);
+    }
+    100% {
+    transform: translateX(-315px);
+    }
+}
+
+/*リスト部分*/
+ul{
+    list-style-type: none;
     padding: 0;
-    list-style: none;
+}
+
+li a{
+    display:block;
+    width:90%;
+    padding-left:40px;
+    padding: 10px;
+    font-size:14px;
+    color:#FFF;
+    background:#0091EA;
+    text-decoration:none;
+}
+
+li a:hover{
+    background:rgba(91, 88, 88, 0.696);
 }
 
 
-
-a{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-.nav {
-    display: flex;
-    width: 310px;
-}
-.nav > li {
-    position: relative;
-    width: 100px;
-    border-right: 1px solid #fff
-}
-.nav > li:first-child{
-    border-left: 1px solid #0071b9;
-}
-.nav-a {
-    display: block;
-    line-height: 1;
-    z-index: 1;
-}
-.nav {
-    flex-flow: row wrap;
-}
-.nav a {
-    padding: 0.5em 0;
-    font-size: 16px;
-    color: #0071b9;
-    text-align: center;
-}
 
 
 
