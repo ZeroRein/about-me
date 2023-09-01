@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-h1, h2 {
+h1,h2 {
     margin-top: 0;
     margin-bottom: 40px;
     line-height: 1.5;
 }
+
 .main {
     position: relative;
     left: 100px;
@@ -34,11 +35,6 @@ p {
 }
 .side {
     position: absolute;
-    right: 1vw;
-    left: -1%;
-    width: 20vw;
-    height: 100%;
-    margin:0px;
     background: #454647;;
     animation: close-menu 2s forwards;
 }
@@ -47,26 +43,43 @@ p {
 }
 @keyframes open-menu {
     0% {
-    transform: translateX(-24vw);
+        transform: translateX(-43vw);
     }
     100% {
-    transform: translateX(-8.5vw);
+    transform: translateX(-20.5vw);
     }
 }
 
 @keyframes close-menu {
     0% {
-    transform: translateX(-8.5vw);
+    transform: translateX(-20.5vw);
     }
     100% {
-    transform: translateX(-24vw);
+    transform: translateX(-43vw);
     }
 }
 
 /*リスト部分*/
+
 ul{
     list-style-type: none;
     padding: 0;
+}
+.has-sub a {
+    display: block;
+    width: 24vw;
+    left: 20vw;
+    right: 5vw;
+    padding-left:40vw;
+    padding: 10px;
+    font-size:14px;
+    text-align: center;
+    color:#FFF;
+    background:#454647;
+    text-decoration:none;
+
+    
+
 }
 
 li a{
