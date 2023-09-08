@@ -1,11 +1,83 @@
 @charset "UTF-8";
-
+*{
+    margin: 0;
+    padding: 0;
+}
 h1,h2 {
     margin-top: 0;
     margin-bottom: 40px;
     line-height: 1.5;
 }
+body {
+    height: 100vh;
+    background-color: #fff;
+}
 
+.navg {
+    border: 1px solid black;
+    height: 100vh;
+    width: 70px;
+    position: relative;
+    background-color: #63656692;
+    box-shadow: 10px 0 0 #292a2a;
+    border-left: 10px solid #63656692;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+.navg:hover {
+    width: 300px;
+}
+
+.navg ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.navg ul li{
+    list-style: none;
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+.navg ul li{
+    background-color: #292a2a;
+
+}
+.navg ul li :hover{
+    background-color: #505151;
+}
+
+.navg ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.navg ul li a .icon {
+    display: block;
+    min-width: 45px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navg ul li a .icon ion-icon {
+    font-size: 1.5rem;
+}
+
+.nav ul li a .title {
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
 .main {
     position: relative;
     left: 100px;
@@ -40,124 +112,7 @@ aside {
     padding-right: 0%;
 }
 */
-.side {
-    position: absolute;
-    display: inline-block;
-    z-index: 2;
-}
 
-
-
-.aside {
-    border: 2px solid rgb(128, 128, 128);
-    height: 100vh;
-    width: 70px;
-    position: relative;
-    background-color: rgb(177, 177, 177);
-    box-shadow: 8px 0 0 rgb(128, 128, 128);
-    border-left: 10px solid rgb(177, 177, 177);
-    overflow-x: hidden;
-    transition: all 0.5s;
-}
-
-.aside:hover {
-    width: 250px;
-
-}
-
-
-.aside ul {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-    
-    
-.aside ul li {
-
-    list-style: none;
-
-    display: block;
-
-    width: 100%;
-
-    position: relative;
-
-    border-radius: 15px;
-
-}
-
-
-
-.aside ul li:hover {
-
-    background-color: rgba(143, 143, 143, 0.422);
-
-}
-
-
-
-.aside ul li.active {
-    background-color: rgb(128, 128, 128);
-    }
-
-
-.aside ul li.active::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: -30px;
-    right: 0;    
-    border-radius: 50%;
-    box-shadow: 15px 15px  rgb(128, 128, 128);
-}
-
-
-
-.aside ul li.active::after {
-    content: "";
-    position: absolute;    
-    width: 30px;
-    height: 30px;    
-    top: 60px;
-    right: 0;
-    border-radius: 50%;
-    box-shadow: 15px -15px  rgb(128, 128, 128);
-    }
-
-.aside ul li a {
-    text-decoration:    none;
-    color: black;
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-
-
-.aside ul li a .icon {
-    display: block;
-    min-width: 45px;
-    height: 60px;
-    line-height: 70px;
-    text-align: center;
-}
-
-.aside ul li a .icon ion-icon {
-
-    font-size: 1.5rem;
-}
-
-.aside ul li a .title {
-    padding-left: 10px;
-    height: 60px;
-    line-height: 60px;
-    white-space: nowrap;
-}
 
     コンテキスト メニューあり
 
@@ -194,7 +149,7 @@ aside {
 
 
 /*リスト部分*/
-
+/*
 ul{
 list-style-type: none;
 padding: 0;
@@ -215,7 +170,7 @@ text-decoration:none;
 
 
 }
-
+/*
 li a{
 display:block;
 width:90%;
@@ -227,22 +182,22 @@ color:#FFF;
 background:#454647;
 text-decoration:none;
 }
-
+/*
 li a:hover{
     background:rgba(91, 88, 88, 0.696);
-}
-
+}*/
+/*
 @media screen and (min-width: 600px) {
     .header {
         padding: 0;
-    }
+    }/*
     .header-h1 {
         color: #fff;
         margin: 0 auto;
         text-align: center;
         padding-bottom: 5px;
     }
-    
+    /*
     .side {
         position: absolute;
         background: #454647;;
@@ -253,8 +208,9 @@ li a:hover{
 }
 /*
 transition-delay: 5s ;
-}
 */
+/*
+}
 .side:hover{
     animation: open-menu 2s forwards;
 }
@@ -284,7 +240,7 @@ transition-delay: 5s ;
     }
     
     /*リスト部分*/
-    
+    /
     ul{
         list-style-type: none;
         padding: 0;
@@ -301,10 +257,11 @@ transition-delay: 5s ;
         color:#FFF;
         background:#454647;
         text-decoration:none;
-        
+        */
         
         
     }
+    
     
     li a{
         display:block;
@@ -321,6 +278,7 @@ transition-delay: 5s ;
     li a:hover{
         background:rgba(91, 88, 88, 0.696);
     }
+
 }
     
     
