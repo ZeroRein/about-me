@@ -15,9 +15,11 @@ body {
 .side {
     position: fixed;
     display: inline-block;
+    z-index: 2;
 }
 .side ul {
     display: block;
+    margin: 0%;
 }
 
 .navg {
@@ -30,7 +32,6 @@ body {
     border-left: 10px solid #63656692;
     overflow-x: hidden;
     transition: all 0.5s;
-    z-index: 1;
 }
 .navg:hover {
     width: 300px;
@@ -100,7 +101,7 @@ body {
 .main {
     position: absolute;
     left: 100px;
-    z-index: 2;
+    z-index: 1;
 }
 p {
     margin-top: 0;
