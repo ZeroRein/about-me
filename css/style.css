@@ -12,6 +12,9 @@ body {
     height: 100vh;
     background-color: #ffffff;
 }
+body {
+    font-size: 0.5rem;
+}
 .side {
     position: fixed;
     display: inline-block;
@@ -23,7 +26,7 @@ body {
 }
 
 .navg {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     height: 100vh;
     width: 70px;
     position: relative;
@@ -34,7 +37,7 @@ body {
     transition: all 0.5s;
 }
 .navg:hover {
-    width: 300px;
+    width: 150px;
 }
 
 .navg ul {
@@ -52,6 +55,7 @@ body {
     position: relative;
     width: 100%;
     border-radius: 15px;
+    font-size: 0.7rem;
 }
 .navg ul li .active {
     background-color: #292a2a;
@@ -125,6 +129,84 @@ padding-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
+    h1,h2 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        line-height: 1;
+    }
+    .navg {
+        border: 1px solid black;
+        height: 100vh;
+        width: 70px;
+        position: relative;
+        background-color: #636566;
+        box-shadow: 10px 0 0 #292a2a;
+        border-left: 10px solid #63656692;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+    .navg:hover {
+        width: 300px;
+    }
+    
+    .navg ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    
+    .navg ul li{
+        list-style: none;
+        display: block;
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        font-size: 1.5rem;
+    }
+    .navg ul li .active {
+        background-color: #292a2a;
+    }
+    .navg ul li .active::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -30px;
+        right: 0;
+        border-radius: 50%;
+        box-shadow: 15px 15px 0 #161616;
+    }
+    
+    .navg ul li :hover{
+        background-color: #505151;
+    }
+    
+    .navg ul li a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+    
+    .navg ul li a .icon {
+        display: block;
+        min-width: 50px;
+        height: 60px;
+        line-height: 70px;
+        text-align: center;
+    }
     
     
+    .navg ul li a .icon ion-icon {
+        font-size: 1.5rem;
+    }
+    
+    
+}
+body {
+    font-size: 1rem;
 }
